@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="../HHH/logo.jpg" class="d-inline-block align-top rounded" width="30" height="30" alt="">
+                Indian Automation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../HHH/HI.html">Home<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../HHH/about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Home services</a></li>
+                            <li><a class="dropdown-item" href="../HHH/track.html">Track an Electrician near you</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../HHH/complaint.html">Complaint</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../HHH/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <button class="btn btn-outline-danger mx-2" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</button>
+                <button class="btn btn-outline-danger mx-2" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+      <!-- Modal -->
+ <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                 <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Log in to Indian Automation</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <a href="#">Forgot Password?</a>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">I agree to Terms and Conditions</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                 <div class="modal-header">
+              <h5 class="modal-title" id="signupModalLabel">Sign Up to Indian Automation</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword2" class="form-label">Create Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword3">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword5">
+                      </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">I agree to Terms and Conditions</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Create Account</button>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../HHH/download (2).jpg" class="d-block w-100" width="100" height="300" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-danger">First time in west Bengal</h5>
+                    <p class="text-danger">Fully home Automation and Reliable elec. devices</p>
+                    <button type="button" class="btn btn-warning">Log in</button>
+                    <button type="button" class="btn btn-primary">Join Us</button>
+                    <button type="button" class="btn btn-success">Sign Up</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../HHH/images.jpg" class="d-block w-100" width="100" height="300" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-success">Time to face ultra-technical products</h5>
+                    <p class="text-success">convenient,advantageous</p>
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#loginModal">Log in</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#joinusModal">Join Us</button>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#signupModal">Sign Up</button>
+                </div>
+            </div>
+  
+            <div class="carousel-item">
+                <img src="../HHH/download (1).jpg" class="d-block w-100 " width="100" height="300" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-warning">Waiting to serve you</h5>
+                    <p class="text-warning">Are you looking for it? contact us</p>
+                    <button type="button" class="btn btn-warning">Log in</button>
+                    <button type="button" class="btn btn-primary">Join Us</button>
+                    <button type="button" class="btn btn-success">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <h1 class="title mb-4 ms-5">welcome to Indian Automation</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card mb-4 shadow-lg" style="width: 18rem; height: 25rem;">
+                    <img src="../HHH/wlc.txt" class="card-img-top" height="100" width="100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Water level controller</h5>
+                        <p class="card-text mb-2">To control Water overload from tank and to control auto on/off the motor ,
+                            we use this product.
+                            It saves huge amount of Electrical Energy and reduces human efforts.
+                        </p>
+                        <div class="btn-grp">
+                            <a class="btn btn-success btn-sm my-3" href="#">10.00/-</a>
+                            <a class="btn btn-warning btn-sm my-3" href="#">Add to Cart</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary d-md-block" value="Order">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 shadow-lg" style="width: 18rem; height: 25rem;">
+                    <img src="../HHH/rccb.txt" class="card-img-top" height="140" width="70" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            RCCB</h5>
+                                <p class="card-text mb-2">It saves us from electric shocks as well as it protects the wires
+                                    from fire
+                                    and also RCCB is particularly helpful in instances of sudden earth fault.</p>
+                                    <div class="btn-grp">
+                                        <a class="btn btn-success btn-sm my-1" href="#">10.00/-</a>
+                                        <a class="btn btn-warning btn-sm my-1" href="#">Add to Cart</a>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary d-md-block" value="Order">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 shadow-lg" style="width: 18rem; height: 25rem;">
+                    <img src="../HHH/360.txt" class="card-img-top my-0" height="140" width="100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Microwave Sensor</h5>
+                        <p class="card-text mb-0">Detecting human motion it let the lights/Fans start itself,automaticaly. It
+                            saves lot of Electrical Energy and reduces human efforts. And It covers 360°.</p>
+                            <div class="btn-grp">
+                                <a class="btn btn-success btn-sm my-2" href="#">10.00/-</a>
+                                <a class="btn btn-warning btn-sm my-2" href="#">Add to Cart</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary d-md-block" value="Order">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-4 shadow-lg" style="width: 18rem; height: 25rem;">
+                        <img src="../HHH/ldr.txt" class="card-img-top" height="130" width="100" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">LDR</h5>
+                            <p class="card-text mb-0">It turns the Light on absorbing darkness automatically and turns the
+                                light
+                                off detecting a certain lux light.
+                                Its an Energy saving product and reduce human effort too..</p>
+                                <div class="btn-grp">
+                                    <a class="btn btn-success btn-sm my-2" href="#">10.00/-</a>
+                                    <a class="btn btn-warning btn-sm my-2" href="#">Add to Cart</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary d-md-block" value="Order">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 shadow-lg" style="width: 18rem; height: 25rem;">
+                        <img src="../HHH/beam sensor.txt" class="card-img-top mb-4" height="150" width="100" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Beam Sensor</h5>
+                            <p class="card-text mb-0">Anti-theft Device. It protects us form robbery</p>
+                            <div class="btn-grp">
+                                <a class="btn btn-success btn-sm my-3" href="#">10.00/-</a>
+                                <a class="btn btn-warning btn-sm my-3" href="#">Add to Cart</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary d-md-block" value="Order">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 shadow-lg" style="width: 18rem; height: 25rem;">
+                        <img src="../HHH/sss.txt" class="card-img-top" height="130" width="100" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Smart security system</h5>
+                            <p class="card-text mb-1">Motion Sensor+Smoke Detector+Door Open Detector+Shutter open
+                                Detector+Sos
+                                Switch in a single set</p>
+                                <div class="btn-grp">
+                                    <a class="btn btn-success btn-sm my-3" href="#">10.00/-</a>
+                                    <a class="btn btn-warning btn-sm my-3" href="#">Add to Cart</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary d-md-block" value="Order">Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div container-fluid d-flex>
+        <h3 class="blog-title my-4 mb-2 ms-3 text-warning">Blogs</h3>
+        <div class="row">
+            <div class="col">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative" style="height:440px;width: 300px;">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary">World</strong>
+                  <h3 class="mb-0">Fastest Growing Industry</h3>
+                  <div class="mb-1 text-muted">Aug 5</divThis is a >
+                  <p class="card-text mb-auto">Write how the industry is growing up</p>
+                  <a href="#" class="stretched-link">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                 <img src="../HHH/download (1).jpg" class="justify-content-center ms-0"  alt="">
+                </div>
+              </div>
+            </div></div>
+            <div class="col">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative float-end"style="height:440px;width: 300px;">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-success">Automation</strong>
+                  <h3 class="mb-0">Authors Thinking</h3>
+                  <div class="mb-1 text-muted">Aug 6</div>
+                  <p class="mb-auto">Write authors thinking here</p>
+                  <a href="#" class="stretched-link">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img src="../HHH/download (2).jpg" class="justify-content-center ms-4" alt="">
+                </div>
+              </div>
+            </div>
+          </div></div></div>
+          <footer class="bg-secondary">
+              <h3 class="mb-2 ms-3 text-light">Contact</h3>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/indian1automation/" title="Facebook" target="_blank" xtm-t="E"
+                        xtm-n="Social-footer::">
+                        <img src="../HHH/fb.png" style="width: 30px;height: 30px;" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://wa.me/c/918348327532" title="Whatsapp" target="_blank" xtm-t="E" xtm-n="Social-footer::">
+                        <img src="../HHH/whatsapp.png" style="width: 30px;height: 30px;" alt=""></a>
+                </li>
+                </ul> 
+            <p class="d-flex justify-content-center text-danger bg-light">Copyright @ Indian Automation 2021 </p><p class="d-flex justify-content-center bg-light"><a href="../HHH/tnc.html">Terms and Condition</a></p><p class="d-flex justify-content-center bg-light"><a href="../HHH/privacy.html">Privacy Policy</a></p><p class="d-flex justify-content-center bg-light"><a href="../HHH/refund.html">Refund Policy</a></p>
+            </footer>
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+            <script src="../HHH/js.js"></script>
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+   
+
+</body>
+
+</html>
+<!-- https://wa.me/c/918348327532 -->
